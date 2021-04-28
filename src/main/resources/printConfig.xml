@@ -5,7 +5,7 @@
 
     <!-- paper bean 등록 -->
     <!-- id: bean 이름, class: bean 경로 -->
-    <bean id="paper2" class="com.spring.core.basic.printer.Paper">
+    <bean id="paper" class="com.spring.core.basic.printer.Paper">
         <property name="datas">
             <list>
                 <value>JAVA</value>
@@ -17,7 +17,7 @@
 
     <!-- printer bean 등록 -->
     <!-- id: bean 이름, class: bean 경로 -->
-    <bean id="printer2" class="com.spring.core.basic.printer.Printer">
+    <bean id="printer" class="com.spring.core.basic.printer.Printer">
         <constructor-arg ref="paper"/>
     </bean>
 

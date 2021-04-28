@@ -3,6 +3,7 @@ package com.spring.core.basic.printer;
 import com.spring.core.basic.config.PrinterConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
@@ -20,7 +21,7 @@ class PrinterTest {
         printer.printPaper();
     }
 
-    /*@Test
+    @Test
     @DisplayName("스프링 xml 컨테이너에 의해 프린터가 생성되고 작동해야 한다.")
     void printerTestByXmlConfig() {
         ApplicationContext context = new GenericXmlApplicationContext("printConfig.xml");
@@ -28,6 +29,6 @@ class PrinterTest {
         Printer printer = context.getBean(Printer.class);
 
         printer.printPaper();
-    }*/
+    }
 
 }
